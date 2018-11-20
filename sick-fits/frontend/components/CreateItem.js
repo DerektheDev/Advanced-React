@@ -50,7 +50,7 @@ class CreateItem extends Component {
     data.append("upload_preset", "sickfits");
 
     const res = await fetch(
-      "https://api.cloudinary.com/api/v1_1/derekthedev/image/upload",
+      "https://api.cloudinary.com/v1_1/derekthedev/image/upload",
       {
         method: "POST",
         body: data
@@ -116,7 +116,7 @@ class CreateItem extends Component {
                 />
               </label>
 
-              <label htmlFor="title">
+              <label htmlFor="price">
                 Price
                 <input
                   type="number"
@@ -129,7 +129,7 @@ class CreateItem extends Component {
                 />
               </label>
 
-              <label htmlFor="title">
+              <label htmlFor="description">
                 Description
                 <textarea
                   id="description"
